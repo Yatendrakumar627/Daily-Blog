@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 const SECRET_KEY = process.env.SECRET_KEY || 'your_secret_key';
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Replace with your frontend URL
+  origin: 'https://daily-conversation-with-myself.netlify.app/', // Replace with your frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
